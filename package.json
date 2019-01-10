@@ -1,20 +1,23 @@
 {
-    "name": "app-vendas",
-    "version": "1.0.0",
-    "description": "",
-    "main": "./src/index/index.js",
-    "scripts": {
-      "start": "node ./bin/server.js"
-    },
-    "keywords": [],
-    "author": "",
-    "license": "ISC",
-    "dependencies": {
-      "body-parse": "^0.1.0",
-      "debug": "^4.1.1",
-      "express": "^4.16.4",
-      "http": "0.0.0",
-      "nodemon": "^1.18.9"
-    }
+  "name": "app-vendas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./src/router/index-route.js",
+  "scripts": {
+    "start": "nodemon ./bin/server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parse": "^0.1.0",
+    "debug": "^4.1.1",
+    "express": "^4.16.4",
+    "http": "0.0.0",
+    "mongoose": "^5.4.2",
+    "nodemon": "^1.18.9"
+  },
+  "devDependencies": {
+    "nodemo": "^1.0.0"
   }
-  
+}
