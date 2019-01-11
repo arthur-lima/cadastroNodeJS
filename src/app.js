@@ -8,14 +8,14 @@ const app = express();
 const router = express.Router();
 
 //Carrega DB
-mongoose.connect('mongodb://sa:sa1234@ds054308.mlab.com:54308/vendasdb', { useNewUrlParser: true });
+mongoose.connect('mongodb://sa:sa4321@ds018538.mlab.com:18538/cadastrodb', { useNewUrlParser: true });
 
 //Carrega Models
-const Product = require('./model/product-model');
+const Produto = require('./model/produto-model');
 
 //Carrega Rotas
 const indexRoute = require('./router/index-route');
-const productRoute = require('./router/product-route');
+const produtoRoute = require('./router/produto-route');
 
 //Para trabalhar com Json
 app.use(bodyParser.json());
@@ -30,6 +30,6 @@ app.use((req, res, next) => {
 });
 
 app.use('/', indexRoute);
-app.use('/produtos', productRoute);
+app.use('/produtos', produtoRoute);
 
 module.exports = app;
